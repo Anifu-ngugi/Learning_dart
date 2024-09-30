@@ -6,7 +6,7 @@ void main(){
   for(int i=0;i<3;i++){
     stdout.write("Enter your Name ${i+1}: ");
     String? name=stdin.readLineSync();
-    stdout.write("Enter your Phone Number ${i+1}: ");
+    stdout.write("Enter your Phone no ${i+1}: ");
     String? phone=stdin.readLineSync();
 
     file.writeAsStringSync('$name, $phone\n',mode: FileMode.append);
